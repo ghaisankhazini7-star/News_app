@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The latest headlines from CNN Indonesia, in one clear and easy-to-read edition.">
+    <meta name="theme-color" content="#f4f3ee">
+    <title>NEWS — The Daily Brief</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="preloader" role="status" aria-live="polite">
+        <div class="loader"></div>
+        <h2>Gathering the headlines</h2>
+        <p>Bringing you the latest stories.</p>
+    </div>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="topline">
+                <p>The daily brief</p>
+                <p>Independent by design · Updated daily</p>
+            </div>
+            <div class="brand-row">
+                <a class="brand" href="#" aria-label="NEWS home">
+                    NEWS<span class="brand-mark" aria-hidden="true"></span>
+                </a>
+                <p class="brand-note">The stories shaping<br>Indonesia and the world.</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section aria-labelledby="latest-heading">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Your essential briefing</p>
+                    <h1 id="latest-heading">Latest stories</h1>
+                </div>
+                <label class="search-box">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="1.8"></circle>
+                        <path d="m16 16 4.2 4.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+                    </svg>
+                    <input id="news-search" type="search" placeholder="Search the headlines" aria-label="Search the headlines">
+                </label>
+            </div>
+            <hr class="rule">
+            <p id="news-count" class="eyebrow is-hidden" aria-live="polite"></p>
+            <div id="berita" aria-live="polite" aria-busy="true"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>NEWS — A clearer view of what matters.</p>
+            <p>Headlines via CNN Indonesia</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
